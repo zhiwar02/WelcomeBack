@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>بەخێربێتەوە😁</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="a">
+      <form action="#" class="container">
+        <p>
+          دوبارە بەخێربێتەوە خانمی مێژوو نوس (بانوو) یان با بڵێن خێلان هەرکامیان
+          بێت فەرقی نییە ئەمەوێ کە پێت بڵێم ئەوەی پار بینیت تەنیا سەرەتا بوو وە
+          سەرەتای فێربوونم بوو ئێستا وا ساڵێک ئەزموونم هەیە ئینشاڵا هەوڵ ئەدەم
+          باشترینی خۆم بکەم شایەنەی ئەو چاوەڕوانیەی تۆ بێت چاوەڕێی ئەوە بکە کە
+          چاوەڕێی ناکەی ئەمجار هەوڵ ئەدەم نەیەڵم بە ئاسانی بگەیت بە شتەکان ئەبێ
+          وەڵامی پرسیارێک بزانی بۆ ئەوەی بگەی بە شتێک بیر کردنەوەی تیایا
+          لەوانەیە نازناوێک کە خۆم بۆم دانابی بیکەمە پرسیار لەوانەیە بژاردەت
+          بەمێ لەوانەیە قسەیەک کە زۆر دوبارەت کردووەتەوە لەگەڵ من یان ئەو شتانەی
+          رقت لێیە یان هەرشتێکی دیکە هەوڵ ئەدەم یاریەکیشی تیا دا بنێم ئینشاڵا
+          ئەگەر ماین تا ئەو کاتە خۆت دەیبینیت هەوڵ ئەدەم شتێک بێ کە چێژی لێ
+          ببینی بۆیە خانمی مێژوو نوس خۆت ماندوو مەکە کات ببە پێشەوە چونکە یەک
+          ئیش ناکات دوو تازە دەست پێ ئەکەم تاکە داواکاریم ئەوەیە کە ئەو ڕۆژە
+          ئەگەر لەمڕۆوە قسە نەکەی تا ئەو ڕۆژە ئەو ڕۆژە قسەم لەگەڵ بکەیت بۆ ئەوەی
+          بزانم ئەگەیت بە کوێ هەموو شتەکان ئەکەیتەوە بەدڵت ئەبێ یان نا بۆیە
+          ❤️‍🩹💙چاوەڕێی بکە هیوادارم شایەنی ئەوە بێت کە چاوەڕێی ئەکەیت
+        </p>
+        <button
+          id="myBtn"
+          style="
+            width: 70%;
+            font-weight: 600;
+            padding: 1.4rem 2rem;
+            border: 0;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            white-space: nowrap;
+            background-color: var(--color-primary);
+            color: var(--color-headings);
+          "
+          class="btnDisable btn btn--primary"
+          disabled
+          onclick="alert('ۆکەی بکە👻')"
+        >
+          .👻....!ئامادەیت ؟ پێنجشەم لە بەرواری
+          <p id="demo"></p>
+        </button>
+      </form>
+    </div>
+
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Nov 10, 2022 00:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML =
+          days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "دەست بنێ بەم بۆکسەدا";
+          $("#myBtn").removeAttr("disabled");
+          $("#myBtn").removeClass().addClass("btnEnable");
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
